@@ -1,0 +1,15 @@
+{
+    "PENDINGALERTS": "Tiene {{value}} alarmas pendiente(s)!",
+    "NOALERTS": "No tiene alertas pendiente(s)!",
+    "ALERTS":"Alertas",
+    "ATTEND":"Atendida",
+    "BUTTONATTEND":"ATENDER",
+    "ENTERCOMMENTS":"Ingrese un comentario",
+    "TODAY":"Hoy",
+    "YESTERDAY":"Ayer",
+    "NOALERT":"No tienes alertas",
+    "REFRESHBUTTON":"ACTUALIZAR",
+    "NOAVAILABLETITLE":"Lo sentimos",
+    "NOAVAILABLEDESCRIPTION":"Algo ocurrió, por favor intenta de nuevo.",
+    "REINTENTBUTTON":"INTENTAR DE NUEVO" 
+}

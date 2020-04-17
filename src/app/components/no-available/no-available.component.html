@@ -1,0 +1,18 @@
+
+<div fxLayout="column" fxLayoutAlign="center center" fxLayout.xs="column" >
+    
+    <div class="container-icon" >
+        <mat-icon class="noavailable-icon" svgIcon="ic-alerts-error.svg"></mat-icon>
+    </div>
+    <div class="container-text-title">
+        <label class="noavailable-text-title">{{ noAvailableTitle | translate:translateParam }}</label>
+    </div>
+    <div class="container-text-description">
+        <label class="noavailable-text-description">{{ noAvailableDescription | translate:translateParam }}</label>
+    </div>
+    <div  fxFlex="30" class="container-reintent-button">   
+        <button mat-button (click)="ReintentCommand()">{{ reintentButton | translate:translateParam }}
+        </button>                                      
+    </div>  
+</div>
+

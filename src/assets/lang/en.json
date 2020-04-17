@@ -1,0 +1,15 @@
+{
+    "PENDINGALERTS": "You have {{value}} pending alert(s)!",
+    "NOALERTS": "You don't have any pending alert!",
+    "ALERTS":"Alerts",
+    "ATTEND":"Revolved",
+    "BUTTONATTEND":"Attend",
+    "ENTERCOMMENTS":"Enter to comments",
+    "TODAY":"Today",
+    "YESTERDAY":"Yesterday",
+    "NOALERT":"No alerts",
+    "REFRESHBUTTON":"REFRESH",
+    "NOAVAILABLETITLE":"We're sorry",
+    "NOAVAILABLEDESCRIPTION":"Something went wrong, please try again",
+    "REINTENTBUTTON":"TRY AGAIN" 
+}

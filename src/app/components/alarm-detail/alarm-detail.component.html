@@ -1,0 +1,64 @@
+
+<div class="container-head-detail">
+    <div class="container-icon-detail" (click)="hideAlarm.emit(false)">
+        <i class="material-icons arrow-back"> arrow_back</i>
+     </div> 
+     <div class="container-title">
+        <h3 class="title-servicecode"> {{alarm.serviceCode}} </h3>
+    </div> 
+    <div class="container-icon-close" (click)="showAlarmsList.emit()">
+        <i class="material-icons close">
+            close
+        </i>
+    </div>  
+ </div>
+
+<mat-divider></mat-divider>
+
+<div fxLayout="column" fxLayoutAlign="center center" fxLayout.xs="column" *ngIf="isBusy" >    
+    <div class="container-spinner" >
+        <mat-spinner [diameter]="40"></mat-spinner>
+    </div>   
+</div>
+
+<satrack-alarms-web-no-available *ngIf="error && !isBusy" (reintent)="Reintent($event)"></satrack-alarms-web-no-available>
+
+<div id="alarm-detail-container" *ngIf="!error && !isBusy" class="alarm-detail-container">
+    <div class="container-alarm-data-basic">   
+        
+        <div class="title-alarm">{{alarm.title}}</div>
+                               
+        <div class="container-iconAttend-alarm" *ngIf="alarm.status == 0">
+            <label class="iconText-alarm">{{ alarmsAttend | translate:translateParam }}</label>
+        </div>
+                
+        <p matLine class="alarm-event-date">{{alarm.eventDate | convertdate}}</p>
+        <p matLine class="alarm-event-address">{{alarm.address | substring: 44}}</p>
+    </div>
+
+    <satrack-alarms-web-map [alarm]="alarm"></satrack-alarms-web-map>
+
+    <div class="container-alarm-detail-notattend" *ngIf="alarm.status == 1" >
+        <div class="container-attend-input">           
+            <mat-form-field class="alarm-input-comments">
+                <mat-label>{{ enterComment | translate:translateParam }}</mat-label>
+                <textarea matInput [(ngModel)]="commentsAttend"></textarea>
+              </mat-form-field>
+        </div>
+      
+        <div class="container-attend-button">   
+            <button mat-button (click)="SetAttendAlarmCommand()">
+                <label class="text-attend-button">{{ buttonAttend | translate:translateParam }}</label>     
+            </button>                                      
+        </div>        
+    </div>
+    <div class="container-alarm-detail-attend" *ngIf="alarm.status != 1">       
+            <mat-icon class="icon-comment-attend" svgIcon="ic_user.svg"></mat-icon>        
+            <p matLine class="alarm-event-userattend">{{userAttend.name}}</p>        
+            <p matLine class="alarm-event-userattend-business">{{userAttend.businessName}}</p>        
+            <p matLine class="alarm-event-userattend-date">{{userAttend.dateAttention | convertdate}}</p>                   
+            <div class="container-userattend-comments">
+                <p matLine class="alarm-event-userattend-comments">{{commentUserAttend}}</p>
+            </div>          
+    </div>    
+</div>

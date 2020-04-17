@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ic_battery_read</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic_battery_read" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_alert_list">
+            <rect id="Rectangle-Copy" fill="#EBECF3" x="0" y="0" width="36" height="36" rx="14"></rect>
+            <g id="Group" transform="translate(5.912541, 12.000000)" fill-rule="nonzero">
+                <g id="car-battery-2" transform="translate(4.087459, 0.000000)" fill="#8B99B9">
+                    <g id="car-battery">
+                        <path d="M15.5,1.00001464 L14,1.00001464 L14,0.5 C14,0.223627395 13.7763645,0 13.4999835,0 L11.4999762,0 C11.2235953,0 10.9999671,0.223627395 10.9999671,0.5 L10.9999671,1.00001464 L5,1.00001464 L5,0.5 C5,0.223627395 4.77637545,0 4.5,0 L2.49998719,0 C2.22360626,0 1.99997804,0.223627395 1.99997804,0.5 L1.99997804,1.00001464 L0.5,1.00001464 C0.223628213,1.00001464 0,1.22364203 0,1.50002196 L0,11.5 C0,11.7763726 0.223628213,12 0.5,12 L15.5,12 C15.7763425,12 16,11.7763726 16,11.5 L16,1.50002196 C16,1.22364203 15.7763718,1.00001464 15.5,1.00001464 Z M15.000011,10.9999854 L0.999989022,10.9999854 L0.999989022,2 L15.000011,2 L15.000011,10.9999854 L15.000011,10.9999854 Z" id="Shape"></path>
+                        <polygon id="Path" points="2.93333333 6 3.86666667 6 3.86666667 5.06666667 4.8 5.06666667 4.8 4.13333333 3.86666667 4.13333333 3.86666667 3.2 2.93333333 3.2 2.93333333 4.13333333 2 4.13333333 2 5.06666667 2.93333333 5.06666667"></polygon>
+                        <polygon id="Path" points="11.2 4 14 4 14 4.8 11.2 4.8"></polygon>
+                    </g>
+                </g>
+                <g id="Group-9" transform="translate(12.000000, 7.785071) rotate(19.000000) translate(-12.000000, -7.785071) translate(0.000000, 6.285071)">
+                    <polygon id="Rectangle-19" fill="#EBECF3" points="0 1.11111111 24 1.11111111 24 2.22222222 0 2.22222222"></polygon>
+                    <polygon id="Rectangle-19-Copy" fill="#8B99B9" points="0 0 24 0 24 1.11111111 0 1.11111111"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

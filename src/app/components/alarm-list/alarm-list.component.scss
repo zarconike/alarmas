@@ -1,0 +1,156 @@
+.container-head-list{
+    height: 50px;
+    margin-left: 15px; 
+}
+
+.container-title{
+    padding-top: 15px; 
+}
+
+.title-servicecode{
+    width: 58px;
+    height: 19px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212121;
+}
+
+.container-icon-close
+{
+    margin-left: 309px;
+    margin-top: -20px;
+    cursor: pointer;      
+}
+
+.close{
+    color: #757575;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.container-spinner
+{
+    padding-top: 70%;
+}
+
+.container-alarm-list { 
+    width: 360px;
+    height: 600px !important;
+
+    .container-item-list{
+        border-color: #e4e8f0;
+        border-style: solid;
+        border-width: 1px 0px 0px 0px;
+        cursor: pointer;
+        margin-top: -9px;
+        align-items: start !important;
+    }
+
+    .container-icon{
+        
+        margin-right: 15px;        
+    }
+
+    .icon-alarm{
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+    } 
+
+    .description-alarm-read{
+        @extend %description-alarm;        
+    }
+
+    .description-alarm{
+        @extend %description-alarm;
+        font-weight: 900;
+    }
+
+    .container-iconAttend-alarm{
+        width: 59px;
+        height: 21px;
+        border-radius: 10px;
+        background-color: #d3f0e3;
+        margin-left: 217.5px;
+        margin-top: -17px;        
+    }   
+
+    .iconText-alarm{
+        width: 45px;
+        height: 13px;
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #0ead69;  
+        margin-left: 8px;
+    } 
+    
+    .itemlist-data{        
+        %alarm-event {
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;  
+            font-size: 13px;
+            line-height: 1.15;
+            white-space: normal;
+            margin: 0;
+            padding-top: 5px;
+        }
+
+        .alarm-event-date{
+            @extend %alarm-event;
+            font-size: 11px;
+            line-height: 1.36;
+            color: #8798ad;
+        }
+    
+        .alarm-event-address{
+            @extend %alarm-event;
+            color: #7b8b9e;
+        }
+    }        
+
+    %description-alarm{
+        height: 19px;
+        font-size: 14px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal; 
+        color: #212121;
+        margin: 0;
+    }
+        
+}
+
+
+:host{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    mat-toolbar {
+    flex-grow: 0;
+    overflow: hidden;
+    }
+    mat-list {
+    height: 560px;
+    flex-grow: 1;
+    overflow: auto;  
+    }
+}
+
+.mat-drawer-inner-container
+{
+    height: 99% !important;
+}

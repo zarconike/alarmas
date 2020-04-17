@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'mixins';
+@import 'alarms-manager-theme.scss';
+
+@include angular-material-theme($alarm-manager-theme);
+
+
+html {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #b3b1b1;
+}
+
+.alarms-list-container  .mat-drawer-inner-container{
+  width: 360px !important;
+  overflow-y : hidden !important;
+  overflow-x : hidden !important;
+}
+
+.config-style-snackbar
+{
+    background-color: black;
+    width: 312px;
+    height: 40px;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.25px;
+    color: white;
+}
+
+.cdk-global-overlay-wrapper
+{
+  left: 14px !important;  
+}
+
+.mat-list-item-content
+    {
+        align-items: start !important;
+    } 
+    
+    
+  
+    .container-attend-button button,
+    .container-attend-button a {
+        
+        border-top: white solid 0px !important;
+    }

@@ -1,0 +1,46 @@
+.container-icon
+{
+    padding-top: 40%; 
+}
+
+.blank-icon
+{
+    width: 170px;
+    height: 100px;
+    object-fit: contain;    
+}
+
+
+.blank-text
+{
+    width: 121px;
+    height: 19px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212121;
+}
+
+
+.container-refresh-button button,
+.container-refresh-button a {
+    width: 116px;
+    height: 36px;    
+    margin-top: 34px;
+    border-radius: 2px;
+    background-color: #4080f8 !important;   
+  
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: white;
+}

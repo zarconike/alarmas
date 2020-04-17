@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #{ImageName}#
+  namespace: #{NameSpace}#
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: #{ImageName}#
+  template:
+    metadata:
+      labels:
+        app: #{ImageName}#
+    spec:
+      containers:
+      - name: #{ImageName}#
+        image: #{AcrDev}#/#{ImageName}#:#{ImageVersion}#
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: Development
+        - name: UrlKeyCloak
+          value: #{UrlKeyCloak}#
+        - name: UrlSecurity
+          value: #{UrlSecurity}#
+        - name: UrlAllowedClients
+          value: #{UrlAllowedClients}#  
+        - name: TokenSTO
+          value: #{TokenSTO}#
+        - name: UrlNw
+          value: #{UrlNw}#
+        - name: UrlLegacy
+          value: #{UrlLegacy}#
+        - name: UrlContent
+          value: #{UrlContent}#          
+        resources:
+          requests:
+            cpu: 200m
+            memory: 300Mi
+          limits:
+            cpu: 400m
+            memory: 500Mi
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: registrosatrack
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: #{ImageName}#
+  namespace: #{NameSpace}#
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: #{ImageName}#

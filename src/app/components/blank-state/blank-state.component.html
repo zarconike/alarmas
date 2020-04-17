@@ -1,0 +1,15 @@
+
+<div fxLayout="column" fxLayoutAlign="center center" fxLayout.xs="column" >
+    
+    <div class="container-icon" >
+        <mat-icon class="blank-icon" svgIcon="ic_no_alerts.svg"></mat-icon>
+    </div>
+    <div class="container-text">
+        <label class="blank-text">{{ noAlert | translate:translateParam }}</label>
+    </div>
+    <div  fxFlex="30" class="container-refresh-button">   
+        <button mat-button (click)="RefreshCommand()">{{ refreshButton | translate:translateParam }}   
+        </button>                                      
+    </div>  
+
+</div>

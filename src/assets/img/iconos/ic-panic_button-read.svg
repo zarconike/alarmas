@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ic_panic_button_read</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic_panic_button_read" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_alert_list">
+            <rect id="Rectangle-Copy" fill="#EBECF3" x="0" y="0" width="36" height="36" rx="14"></rect>
+            <g id="gesture-double-tap" transform="translate(11.000000, 8.000000)" fill-rule="nonzero">
+                <path d="M6,5 C6.55228475,5 7,5.44771525 7,6 L7,10.47 L8.21,10.6 L13.15,12.79 C13.68,13.03 14,13.56 14,14.14 L14,18.5 C13.97,19.32 13.32,19.97 12.5,20 L6,20 C5.62,20 5.26,19.85 5,19.57 L0.1,15.37 L0.84,14.6 C1.03,14.39 1.3,14.28 1.58,14.28 L1.8,14.28 L5,16 L5,6 C5,5.44771525 5.44771525,5 6,5 Z" id="Path" stroke="#8B99B9"></path>
+                <path d="M6,2 C8.209139,2 10,3.790861 10,6 C10,7.5 9.2,8.77 8,9.46 L8,8.24 C8.61,7.69 9,6.89 9,6 C9,4.34314575 7.65685425,3 6,3 C4.34314575,3 3,4.34314575 3,6 C3,6.89 3.39,7.69 4,8.24 L4,9.46 C2.8,8.77 2,7.5 2,6 C2,3.790861 3.790861,2 6,2 L6,2 Z" id="Path" fill="#8A98BA"></path>
+                <path d="M6,0 C9.3137085,0 12,2.6862915 12,6 C12,7.7 11.29,9.23 10.16,10.33 L9.16,9.88 C10.28,8.96 11,7.56 11,6 C11,3.23857625 8.76142375,1 6,1 C3.23857625,1 1,3.23857625 1,6 C1,8.05 2.23,9.81 4,10.58 L4,11.66 C1.67,10.83 0,8.61 0,6 C0,2.6862915 2.6862915,0 6,0 Z" id="Path" fill="#8A98BA"></path>
+            </g>
+        </g>
+    </g>
+</svg>

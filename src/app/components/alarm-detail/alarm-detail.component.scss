@@ -1,0 +1,261 @@
+.container-head-detail{ 
+    height: 50px;
+    margin-left: 10px;    
+}
+
+.container-icon-detail{
+    margin-top: 15px;   
+    cursor: pointer;
+}
+
+.container-title{
+    padding-left: 15px;
+    padding-top: 17px;
+}
+
+.container-icon-close
+{
+    padding-left: 217px;
+    margin-top: 14px;
+    cursor: pointer;  
+}
+
+.container-spinner
+{
+    padding-top: 70%;
+}
+
+.title-servicecode{
+    width: 58px;
+    height: 19px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212121;
+}
+
+.alarm-detail-container{
+    max-width: 360px;
+    margin-left: 16px;
+    overflow-y: auto;
+    overflow-x : hidden !important;
+}
+
+.container-alarm-data-basic
+{
+    margin-bottom: 10px;
+    padding-top: 12px;
+}
+
+.title-alarm
+{
+    width: 200px;
+    height: 19px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212121; 
+}
+
+.td-iconAttend-container-left{
+    float: left;
+    padding: 0 16px;
+    margin-top: 20px;
+    margin-right: -10;
+}
+
+.container-iconAttend-alarm{
+    width: 59px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d3f0e3;
+    margin-left: 270px;
+    margin-top: -20px;
+} 
+
+.iconText-alarm{
+    width: 45px;
+    height: 13px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0ead69;  
+    margin-left: 7px;     
+}    
+
+.alarm-event-date{
+    width: 120px;
+    height: 15px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    color: #8798ad;
+    margin-top: 10px;
+  }
+
+  .alarm-event-address{
+    width: 300px;
+    height: 15px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: #7b8b9e;
+    margin-top: -2px;
+  }
+
+  
+.container-alarm-detail-notattend
+{
+    margin-top: 10px;
+}
+
+.attend-input-container{
+    width: 308px;
+}
+
+.alarm-input-comments
+{
+    width: 335px !important;
+}
+
+.container-attend-button{    
+    margin-top: 10px;
+    margin-left: -3px;
+}
+
+.container-alarm-detail-attend{
+    margin-top: 16px;
+}
+
+.icon-comment-attend
+{
+    width: 25px;
+    height: 25px;  
+}
+
+.alarm-event-userattend
+{
+  width: 288px;
+  height: 24px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #212121;
+  margin-top: 5px;
+}
+
+.alarm-event-userattend-business{
+
+  width: 300px;
+  height: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #757575;
+  margin-top: -15px;
+}
+
+.alarm-event-userattend-date
+{
+  width: 120px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #757575;
+  margin-top: -5px;
+}
+
+.container-userattend-comments
+{
+    margin-top: 0px;
+}
+
+.alarm-event-userattend-comments
+{
+  width: 320px;
+  height: 17px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #757575;
+  margin-top: 10px;
+}
+
+.arrow-back{
+    color: #757575;
+}
+
+.close{
+    color: #757575;
+    width: 18px;
+    height: 18px;
+}
+
+.mat-form-field 
+{
+    background: white;
+    color: black;    
+}
+
+.container-head-detail div{
+    float: left;
+}
+
+.container-attend-button button,
+.container-attend-button a {
+    width: 337px;
+    height: 36px;
+    background-color: #4080f8;
+}
+
+.text-attend-button
+{
+  width: 65px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: white;
+}

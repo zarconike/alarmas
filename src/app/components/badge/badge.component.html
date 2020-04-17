@@ -1,0 +1,14 @@
+<div id="alarmas-badge-container" class="alarmas-badge-container" *ngIf="showBadge">
+    <mat-icon [matBadge]="badgeCounter"  (click)="showAlarmsList()" matBadgeColor="warn" svgIcon="ic_alarm.svg" aria-hidden="false" [attr.aria-label]="badgeMessage | translate:translateParam"></mat-icon>
+    <span class="cdk-visually-hidden">
+        {{ badgeMessage | translate:translateParam }}
+    </span>
+</div>
+
+<mat-sidenav-container class="alarms-list-container">
+
+    <mat-sidenav #sidenav mode="over" position="end" class="sidenav-alarms" >
+        <satrack-alarms-web-list *ngIf="!showDetail" (showAlert)="showAlarm($event)" (showAlarmsList)="showAlarmsList()"></satrack-alarms-web-list>
+        <satrack-alarms-web-detail *ngIf="showDetail" (hideAlarm)="showDetail=$event" [alarm]="selectedAlarm" (showAlarmsList)="showAlarmsList()"></satrack-alarms-web-detail>
+    </mat-sidenav>
+</mat-sidenav-container>

@@ -1,0 +1,9 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="25.08" height="22.92" viewBox="0 0 25.08 22.92">
+  <title>campana4</title>
+  <path d="M24.17,34.17a2,2,0,0,0,2-2h-4A2,2,0,0,0,24.17,34.17Zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32v-.68a1.5,1.5,0,1,0-3,0v.68c-2.87.68-4.5,3.24-4.5,6.32v5l-2,2v1h16v-1Z" transform="translate(-16.17 -11.25)" fill="#fff"/>
+  <path d="M34,11.25a7.25,7.25,0,1,0,7.27,7.26A7.26,7.26,0,0,0,34,11.25Z" transform="translate(-16.17 -11.25)" fill="#f44336"/>
+  <g>
+    <rect x="16.92" y="2.72" width="1.81" height="5.43" fill="#fff"/>
+    <rect x="16.92" y="9.97" width="1.81" height="1.81" fill="#fff"/>
+  </g>
+</svg>

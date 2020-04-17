@@ -1,0 +1,50 @@
+
+<div class="container-head-list">        
+    <div class="container-title">
+        <h3 class="title-servicecode"> {{ alarmsTitle | translate:translateParam }}</h3>
+    </div>
+    <div class="container-icon-close" (click)="showAlarmsList.emit()">
+        <i class="material-icons close">
+            close
+        </i>
+    </div>  
+</div>
+
+<mat-divider></mat-divider>
+
+<div fxLayout="column" fxLayoutAlign="center center" fxLayout.xs="column" *ngIf="isBusy" >    
+    <div class="container-spinner" >
+        <mat-spinner [diameter]="40"></mat-spinner>
+    </div>   
+</div>
+
+<satrack-alarms-web-no-available *ngIf="error" (reintent)="RefreshList($event)"></satrack-alarms-web-no-available>
+<satrack-alarms-web-blank-state *ngIf="blank" (refresh)="RefreshList($event)"></satrack-alarms-web-blank-state>
+
+<mat-list id="alarm-list" *ngIf="haveAlarms" role="list"  class="container-alarm-list" detect-scroll (onScroll)="GetDetectedEndList($event)">
+    <mat-list-item  class="container-item-list"  role="list" *ngFor="let alarm of alarms" (click)="showAlert.emit(alarm)">
+            <div class="container-icon">
+                <mat-icon *ngIf="alarm.read && alarm.type.id == 7" class="icon-alarm" svgIcon="ic-panic_button-read.svg"></mat-icon>
+                <mat-icon *ngIf="!alarm.read && alarm.type.id == 7" class="icon-alarm" svgIcon="ic-panic-button.svg"></mat-icon> 
+                
+                <mat-icon *ngIf="alarm.read && alarm.type.id == 8" class="icon-alarm" svgIcon="ic-battery-read.svg"></mat-icon>
+                <mat-icon *ngIf="!alarm.read && alarm.type.id == 8" class="icon-alarm" svgIcon="ic-battery.svg"></mat-icon>
+                
+                <mat-icon *ngIf="alarm.read && alarm.type.id != 8 && alarm.type.id != 7" class="icon-alarm" svgIcon="ic-alert-list-read.svg"></mat-icon>
+                <mat-icon *ngIf="!alarm.read && alarm.type.id != 8 && alarm.type.id != 7" class="icon-alarm" svgIcon="ic-alert-list.svg"></mat-icon>
+            </div>
+            <div>                                    
+                <p matLine [ngClass]="{'description-alarm-read': alarm.read ,'description-alarm': !alarm.read}">{{alarm.serviceCode}}</p>
+                        
+                <div class="container-iconAttend-alarm" *ngIf="alarm.status == 0">
+                    <label class="iconText-alarm">{{ alarmsAttend | translate:translateParam }}</label>
+                </div>
+                        
+                <p matLine [ngClass]="{'description-alarm-read': alarm.read ,'description-alarm': !alarm.read}">{{alarm.title}}</p>
+                <div class="itemlist-data">
+                    <p matLine class="alarm-event-date">{{alarm.eventDate | convertdate}}</p>
+                    <p matLine class="alarm-event-address">{{alarm.address | substring: 40}}</p>
+                </div>
+            </div>
+    </mat-list-item>
+</mat-list>

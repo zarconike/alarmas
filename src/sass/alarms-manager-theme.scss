@@ -1,0 +1,11 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$alarm-manager-primary: mat-palette($mat-indigo);
+$alarm-manager-accent: mat-palette($mat-indigo, A200, A100, A400);
+
+$alarm-manager-theme: mat-light-theme($alarm-manager-primary, $alarm-manager-accent);
+
+$primary: mat-color($alarm-manager-primary);
+$accent: mat-color($alarm-manager-accent);
